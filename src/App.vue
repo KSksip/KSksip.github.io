@@ -61,7 +61,7 @@ function toggleDarkMode(){
       <RouterView />
     </div>
 
-    <div class="bg-zinc-100/20 inset-shadow-sm flex gap-2 justify-evenly p-6 mt-10 *:text-zinc-600">
+    <div class="border-1 bg-zinc-100/20 border-zinc-200 flex gap-2 justify-evenly p-6 mt-10 *:text-zinc-500">
       <a href="https://github.com/KSksip/KSksip.github.io" class="hover:text-accent hover:underline">See Page Source</a>
     </div>
   </div>
