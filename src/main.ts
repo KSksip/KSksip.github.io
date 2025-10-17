@@ -20,6 +20,9 @@ import {
     BiMoonStarsFill,
     BiMoonStars,
     SiMariadb,
+    HiExternalLink,
+    LaGlobeSolid,
+    MdMenuRound,
 } from "oh-vue-icons/icons";
 
 addIcons(
@@ -38,6 +41,9 @@ addIcons(
     BiMoonStarsFill,
     BiMoonStars,
     SiMariadb,
+    HiExternalLink,
+    LaGlobeSolid,
+    MdMenuRound
 );
 
 const app = createApp(App)

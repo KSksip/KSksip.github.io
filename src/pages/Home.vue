@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {ref, type Ref} from 'vue'
+import TechnologyTag from '@/components/Technology-Tag.vue'
 
 interface Tech {
     [key: string]: {
@@ -74,7 +74,7 @@ const tech: Tech = {
 </script>
 
 <template>
-    <div class="tracking-wide leading-10 px-5 md:px-0">
+    <div class="tracking-wide leading-10 px-5 mt-8 md:px-0">
         <h1 class="text-5xl font-semibold dark:text-accent-2 text-accent">Hi! (ᵔᵕᵔ)◜</h1>
         <p class="text-xl pt-2 ps-1.5">
             Hello! My name is <span class="text-accent dark:text-accent-2 font-bold">Skip</span>. I'm a highschool student, and I'm currently working towards my end goal of being a <span class="text-accent dark:text-accent-2 font-bold">full-stack developer</span>!
@@ -101,12 +101,7 @@ const tech: Tech = {
             <div v-for="key of Object.keys(tech)" class="nth-[n+2]:mt-10">
                 <h2 class="text-2xl text-center md:text-start font-bold">{{ key }}</h2>
                 <div class="flex justify-center md:justify-start gap-2 mt-2 flex-wrap">
-                    <div v-for="item of tech[key]"
-                    class="gap-1 flex border-1 dark:bg-zinc-700 bg-white dark:border-zinc-600 border-zinc-300 rounded-full px-4 py-2 font-bold shadow-md
-                    hover:scale-105 transition-transform">
-                        <v-icon class="size-6" :name="item.icon"></v-icon>
-                        <h3>{{ item.name }}</h3>
-                    </div>
+                    <TechnologyTag class="hover:scale-105 transition-transform" v-for="item of tech[key]" :name="item.name" :icon="item.icon"/>
                 </div>
             </div>
         </div>  
