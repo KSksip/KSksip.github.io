@@ -97,7 +97,7 @@ const tech: Tech = {
 
     <div class="mt-12">
         <h2 class="text-3xl font-bold dark:text-accent-2 text-accent text-center md:text-start">Skills</h2>
-        <div class="border-t-1 border-b-1 md:border-1 dark:border-zinc-700 border-zinc-200 md:rounded-md inset-shadow-sm px-8 pt-4 pb-8 mt-2">
+        <div class="border-t-1 md:border-b-1 md:border-1 dark:border-zinc-700 border-zinc-200 md:rounded-md md:inset-shadow-sm px-8 pt-4 pb-8 mt-2">
             <div v-for="key of Object.keys(tech)" class="nth-[n+2]:mt-10">
                 <h2 class="text-2xl text-center md:text-start font-bold">{{ key }}</h2>
                 <div class="flex justify-center md:justify-start gap-2 mt-2 flex-wrap">

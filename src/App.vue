@@ -23,8 +23,8 @@ function toggleDarkMode(){
 <template>
   <div class="animate-fade-in min-h-screen flex flex-col justify-between">
     <div class="font-IBMPlexMono sticky top-0 dark:bg-zinc-800/90">
-      <nav class="font-adwaita flex dark:bg-zinc-900/10 bg-white/90 grow-0 flex-row border-b-1 dark:border-zinc-700 border-zinc-200 p-2 justify-center h-13 text-2xl 
-      [&_div]:w-1/3 [&_div]:flex
+      <nav class="font-adwaita flex justify-between lg:px-[10%] xl:px-[22%] dark:bg-zinc-900/10 bg-white/90 grow-0 flex-row border-b-1 dark:border-zinc-700 border-zinc-200 p-2 h-13 text-2xl 
+      sm:[&_div]:w-1/3 [&_div]:flex
       [&_div>*]:hover:cursor-pointer [&_div>*]:hover:text-accent dark:[&_div>*]:hover:text-accent-2">
           <div class="gap-2">
               <button class="visible sm:invisible size-full sm:hidden w-10">
@@ -35,7 +35,7 @@ function toggleDarkMode(){
                 <h2 class="font-bold">KSksip</h2>
               </a>
           </div>
-          <div class="invisible sm:visible justify-center *:font-medium gap-6">
+          <div class="collapse sm:visible justify-center *:font-medium gap-6">
               <router-link 
                 to="/" 
                 :class="$route.fullPath == '/' ? 'text-accent dark:text-accent-2' : ''">
