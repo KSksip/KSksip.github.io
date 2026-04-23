@@ -5,9 +5,36 @@ import TechnologyTag from '@/components/Technology-Tag.vue';
 
 const projects = [
   {
+    link: "https://codeberg.org/Dial",
+    icon: "la-globe-solid",
+    name: "Dial",
+    date: "2026 - Now",
+    description: "A chat app that aims to be free, secure, and open source.",
+    techStack: [
+      {
+        name: "Typescript",
+        icon: "simple-icons:typescript"
+      },
+      {
+        name: "ElysiaJS",
+        icon: "game-icons:fox-tail",
+      },
+      {
+        name: "Tauri",
+        icon: "simple-icons:tauri"
+      },
+      {
+        name: "VueJS",
+        icon: "simple-icons:vuedotjs"
+      },
+      
+    ]
+  },
+  {
+    link: "https://github.com/KSksip/KSksip.github.io",
     icon: "la-globe-solid",
     name: "This Website",
-    date: "October 2, 2025",
+    date: "2025 - Now",
     techStack: [
       {
         name: "VueJS",
@@ -26,7 +53,7 @@ const projects = [
   <div class="tracking-wide sm:px-5 md:px-0 w-full">
 <!--<h1 class="text-5xl font-semibold dark:text-accent-2 text-accent">Some of my projects!</h1>-->    <br>
     <div class="flex flex-col">
-      <a v-for="project in projects" href="https://github.com/KSksip/KSksip.github.io" target="_blank" class="hover:text-accent dark:hover:text-accent-2 hover:cursor-pointer">
+      <a v-for="project in projects" :href="project.link" target="_blank" class="hover:text-accent dark:hover:text-accent-2 hover:cursor-pointer">
         <!-- sm:border-1 sm:hover:inset-shadow-sm !!incase i want to add it back -->
         <div class="border-zinc-200 sm:px-6 sm:py-6 rounded-md flex justify-between">
           <div class="flex flex-col w-full">
@@ -38,14 +65,15 @@ const projects = [
                 </div>
                 <p class="sm:text-lg mt-1.5 ms-1 italic">({{ project.date }})</p>
               </div>
-              <v-icon name="hi-external-link" class="hidden my-auto me-4 size-10"></v-icon>
+              <Icon icon="ic:round-link" class="hidden my-auto me-4 size-10" />
             </div>
+            <p>{{ project.description }}</p>
             <div class="mt-2 flex gap-2 flex-wrap invisible sm:visible">
               <TechnologyTag v-for="tech in project.techStack" :icon="tech.icon" :name="tech.name"/>
             </div>
           </div>
         </div>
-        <hr v-if="projects.length > 1" class="border-zinc-200 my-4">
+        <hr v-if="projects.length > 1" class="dark:border-zinc-700 border-zinc-200 my-4">
       </a>
       
     </div>
