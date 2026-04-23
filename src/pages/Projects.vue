@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { Icon } from '@iconify/vue';
 
 import TechnologyTag from '@/components/Technology-Tag.vue';
 
@@ -11,11 +11,11 @@ const projects = [
     techStack: [
       {
         name: "VueJS",
-        icon: "co-vue-js"
+        icon: "simple-icons:vuedotjs"
       },
       {
         name: "TailwindCSS",
-        icon: "si-tailwindcss"
+        icon: "simple-icons:tailwindcss"
       },
     ]
   },
@@ -33,7 +33,7 @@ const projects = [
             <div class="flex justify-between">
               <div class="sm:flex gap-2">
                 <div class="flex">
-                  <v-icon :name="project.icon" class="size-9"></v-icon>
+                  <Icon :icon="project.icon" class="size-9" />
                   <h2 class="leading-8.5 ms-2 text-2xl sm:text-3xl font-bold">{{ project.name }}</h2>
                 </div>
                 <p class="sm:text-lg mt-1.5 ms-1 italic">({{ project.date }})</p>

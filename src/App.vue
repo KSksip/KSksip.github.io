@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import {ref} from 'vue'
 const theme = ref(localStorage.getItem("theme"))
+import { Icon } from '@iconify/vue'
 
 function toggleDarkMode(){
   const html = document.getElementById('html-root')
@@ -33,11 +34,14 @@ function toggleMenu(){
       [&_div>*]:hover:cursor-pointer [&_div>*]:hover:text-accent dark:[&_div>*]:hover:text-accent-2">
           <div class="gap-2">
               <button @click="toggleMenu" class="visible sm:invisible size-full sm:hidden w-10">
-                <v-icon name="md-menu-round" class="size-full"></v-icon>
+                <Icon icon="radix-icons:hamburger-menu" class="size-full" />
               </button>
               <a href="https://github.com/KSksip" class="flex gap-2">
-                <v-icon class="size-8" name="fa-github" />
-                <h2 class="font-bold">KSksip</h2>
+                <Icon class="size-8" icon="simple-icons:github" />
+              </a>
+              <a href="https://codeberg.org/skiip" class="flex gap-2">
+                <Icon class="size-8" icon="devicon-plain:codeberg" />
+                <h2 class="font-bold">skiip</h2>
               </a>
           </div>
           <div class="collapse sm:visible justify-center gap-6">
@@ -56,10 +60,10 @@ function toggleMenu(){
 
           <div class="justify-end pe-2">
             <button @click="toggleDarkMode">
-              <v-icon 
-                :name="theme == 'dark' ? 'bi-moon-stars-fill' : 'bi-moon-stars'" 
+              <Icon 
+                :icon="theme == 'dark' ? 'material-symbols:sunny-outline-rounded' : 'material-symbols:sunny-rounded'" 
                 class="size-10 rounded-full p-1"
-              ></v-icon>
+              />
             </button>
           </div>
       </nav>
