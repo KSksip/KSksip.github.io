@@ -40,6 +40,10 @@ export const tech: Tech = {
             name: "TailwindCSS",
         },
         {
+            icon: "simple-icons:tauri",
+            name: "Tauri",
+        },
+        {
             icon: "simple-icons:nuxt",
             name: "NuxtJS",
         },
@@ -55,15 +59,15 @@ export const tech: Tech = {
             name: "SQLite"  
         },
         {
-            icon: "simple-icons:mariadb",
-            name: "MariaDB"
+            icon: "simple-icons:postgresql",
+            name: "PostgreSQL"
         }
     ],
 
     Exploring: [
         {
-            icon: "simple-icons:rust",
-            name: "Rust",
+            icon: "simple-icons:openjdk",
+            name: "Java",
         },
     ]
 }

@@ -6,7 +6,7 @@ import TechnologyTag from '@/components/Technology-Tag.vue';
 const projects = [
   {
     link: "https://codeberg.org/Dial",
-    icon: "la-globe-solid",
+    icon: "la:stream",
     name: "Dial",
     date: "2026 - Now",
     description: "A chat app that aims to be free, secure, and open source.",
@@ -32,7 +32,28 @@ const projects = [
   },
   {
     link: "https://github.com/KSksip/KSksip.github.io",
-    icon: "la-globe-solid",
+    icon: "la:stream",
+    name: "Tournament Stream Overlay Manager",
+    description: "(Name is a WIP) An app for managing tournament overlays.",
+    date: "2025 - Now",
+    techStack: [
+      {
+        name: "Tauri",
+        icon: "simple-icons:tauri"
+      },
+      {
+        name: "VueJS",
+        icon: "simple-icons:vuedotjs"
+      },
+      {
+        name: "TailwindCSS",
+        icon: "simple-icons:tailwindcss"
+      },
+    ]
+  },
+  {
+    link: "https://github.com/KSksip/KSksip.github.io",
+    icon: "la:globe",
     name: "This Website",
     date: "2025 - Now",
     techStack: [

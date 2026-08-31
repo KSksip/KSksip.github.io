@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import TechnologyTag from '@/components/Technology-Tag.vue'
+import HighlightText from '@/components/Highlight-Text.vue';
 import { tech } from '@/icons/tech';
 </script>
 
@@ -7,21 +8,22 @@ import { tech } from '@/icons/tech';
     <div class="tracking-wide leading-10 px-5 mt-8 md:px-0">
         <h1 class="text-5xl font-semibold dark:text-accent-2 text-accent">Hi! (ᵔᵕᵔ)◜</h1>
         <p class="text-xl pt-2 ps-1.5">
-            Hello! My name is <span class="text-accent dark:text-accent-2 font-bold">Skip</span>. I'm a highschool student, and I'm currently working towards my end goal of being a <span class="text-accent dark:text-accent-2 font-bold">full-stack developer</span>!
+            Hello! My name is <HighlightText>Skip</HighlightText>. I'm a bachelor student within IT, and I'm currently working towards my end goal of being a <HighlightText>full-stack developer</HighlightText>!
         </p>
 
         <br>
         <h2 class="text-3xl font-bold tracking text-accent dark:text-accent-2">As a developer</h2>
         <p class="text-xl pt-2 ps-1.5">
-            I work alot with <span class="text-accent dark:text-accent-2 font-bold">Vue</span> and <span class="text-accent dark:text-accent-2 font-bold">Typescript</span> since I mostly do front-end. Though, I am interested in learning backend so I am currently learning <span class="text-accent dark:text-accent-2 font-bold">Go</span> in order to have more than just <span class="text-accent dark:text-accent-2 font-bold">Typescript</span> as a backend language. 
+            I work alot with <HighlightText>Vue</HighlightText> and <HighlightText>Typescript</HighlightText> since I mostly do front-end. Though, I am interested in learning backend so I am currently learning <HighlightText>ElysiaJS</HighlightText> in order to learn backend more properly. 
         <br><br>
-            Personally i am a big fan of <span class="text-accent dark:text-accent-2 font-bold">customization</span>. My goal when developing apps is to make them as customizable as possible for me and others. In addition I am also interested in <span class="text-accent dark:text-accent-2 font-bold">open-source</span> software and actively try to find and make open-source alternatives.
+            Personally i am a big fan of <HighlightText>customization</HighlightText>. My goal when developing apps is to make them as customizable and accessible as possible for me and others. In addition I am also interested in <HighlightText>open-source</HighlightText> software and actively try to find and make open-source alternatives.
         </p>
         
         <br>
         <h2 class="text-3xl font-bold dark:text-accent-2 text-accent">Experience</h2>
         <p class="text-xl pt-2 ps-1.5">
-            I have worked two <span class="text-accent dark:text-accent-2 font-bold">internships</span>, at the first one I refactored old <span class="text-accent dark:text-accent-2 font-bold">jQuery</span> pages to <span class="text-accent dark:text-accent-2 font-bold">Vue</span>. At the second one i explored <span class="text-accent dark:text-accent-2 font-bold">Quasar</span> and <span class="text-accent dark:text-accent-2 font-bold">NestJS</span>.
+            I have worked two <HighlightText>internships</HighlightText>, at the first one I refactored old <HighlightText>jQuery</HighlightText> pages to <HighlightText>Vue</HighlightText>. At the second one i explored <HighlightText>Quasar</HighlightText> and <HighlightText>NestJS</HighlightText>. 
+            Other than that i have a decent amount of experience just working on my own projects.
         </p>
     </div>
 
